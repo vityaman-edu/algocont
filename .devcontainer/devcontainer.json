@@ -1,0 +1,16 @@
+{
+    "image": "xianpengshen/clang-tools:18",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "llvm-vs-code-extensions.vscode-clangd",
+                "vadimcn.vscode-lldb",
+                "ms-vscode.makefile-tools",
+                "ms-vscode.cpptools",
+                "davidanson.vscode-markdownlint",
+                "foxundermoon.shell-format"
+            ]
+        }
+    },
+    "postCreateCommand": "sh ci/ubuntu.sh"
+}

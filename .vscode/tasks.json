@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Release",
+            "type": "shell",
+            "command": "sh ci/build.sh ${relativeFileDirname} Release",
+        },
+        {
+            "label": "Build Asan",
+            "type": "shell",
+            "command": "sh ci/build.sh ${relativeFileDirname} Asan",
+        },
+    ],
+}

@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Release",
+            "program": "${workspaceFolder}/out/${relativeFileDirname}/AppRelease",
+            "args": [
+                "--testing"
+            ],
+            "initCommands": [
+                "settings set target.disable-aslr false"
+            ],
+            "preLaunchTask": "Build Release",
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug Asan",
+            "args": [
+                "--testing"
+            ],
+            "initCommands": [
+                "settings set target.disable-aslr false"
+            ],
+            "program": "${workspaceFolder}/out/${relativeFileDirname}/AppAsan",
+            "preLaunchTask": "Build Asan",
+        },
+    ],
+}
