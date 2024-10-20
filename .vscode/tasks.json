@@ -4,12 +4,12 @@
         {
             "label": "Build Release",
             "type": "shell",
-            "command": "sh ci/build.sh ${relativeFileDirname} Release",
+            "command": "bash ci/build.bash ${relativeFileDirname} Release",
         },
         {
             "label": "Build Asan",
             "type": "shell",
-            "command": "sh ci/build.sh ${relativeFileDirname} Asan",
-        },
-    ],
+            "command": "bash ci/build.bash ${relativeFileDirname} Asan",
+        }
+    ]
 }
