@@ -12,5 +12,5 @@
             ]
         }
     },
-    "postCreateCommand": "sh ci/ubuntu.sh"
+    "postCreateCommand": "bash ci/ubuntu.bash"
 }
