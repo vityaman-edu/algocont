@@ -1,5 +1,8 @@
 {
     "image": "xianpengshen/clang-tools:18",
+    "runArgs": [
+        "--platform", "linux/amd64"
+    ],
     "customizations": {
         "vscode": {
             "extensions": [
